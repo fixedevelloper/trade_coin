@@ -111,7 +111,7 @@
                                 <div class="user-email">
                                     <div class="user">
                                         <span class="thumb">
-                                             @if(is_null(auth()->user()->logo))
+                                             @if(is_null(auth()->user()->photo))
                                                 <img src="{{asset('front/images/logo.png')}}" alt="avatar"  class="align-self-center pull-right img-50 blur-up lazyloaded">
                                             @else
                                                 <img src="{{ asset("storage/".auth()->user()->photo) }}" alt="avatar"  class="align-self-center pull-right img-50 blur-up lazyloaded">
